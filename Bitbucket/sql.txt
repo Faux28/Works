@@ -1,0 +1,18 @@
+CREATE TABLE tbl_user (
+  user_id serial unique,
+  user_name VARCHAR(45) NULL,
+  user_email VARCHAR(100),
+  user_password VARCHAR(225) NULL,
+  PRIMARY KEY (user_email));
+  
+CREATE TABLE tbl_wish (
+  wish_id serial,
+  wish_title varchar(45) DEFAULT NULL,
+  wish_description varchar(5000) DEFAULT NULL,
+  wish_user_email VARCHAR(100),
+  wish_date timestamp DEFAULT now(),
+  wish_accomplished INT NULL DEFAULT 0,
+  PRIMARY KEY (wish_id),
+	FOREIGN KEY (wish_user_email)
+                REFERENCES tbl_user (user_email)
+                ON UPDATE CASCADE ON DELETE CASCADE);
