@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>New part</h2>
+
+<form action="" method="post"  enctype="multipart/form-data">
+    <div class="container">
+        <div class="column">
+            <label for="pname">Part name:</label>
+            <input type="text" id="pname" name="pname" required autocomplete="off"><br><br>
+            <input class="btn btn-outline-dark" type="submit" value="Insert"/>
+        </div>
+        <div class="column">
+            <input type="file" id="pimage" name="pimage" accept="image/*" onchange="loadFile(event)"><br><br>
+            <img id="output"/>
+        </div>
+    </div>
+
+
+</form><br>
+{% endblock body %}
