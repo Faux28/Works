@@ -1,14 +1,14 @@
-Open slack app
-Create/open the workspace(you have to be the administrator of the workspace)
-Open the workspace dropdown
-Go to settings and administration > Manage apps > Build
-Click Create New App' > From scratch
-Enter the app name and pick a workspace in the dropdown list and click create app
-Open the created app
-Under 'Add features and functionality' click incoming webhooks
-Activate the incoming webhooks
-Click 'Add New Webhook to Workspace'
-Select a channel in dropdown and click allow
+1.Open slack app
+2.Create/open the workspace(you have to be the administrator of the workspace)
+3.Open the workspace dropdown
+4.Go to settings and administration > Manage apps > Build
+5.Click Create New App' > From scratch
+6.Enter the app name and pick a workspace in the dropdown list and click create app
+7.Open the created app
+8.Under 'Add features and functionality' click incoming webhooks
+9.Activate the incoming webhooks
+10.Click 'Add New Webhook to Workspace'
+11.Select a channel in dropdown and click allow
 
 
 Create a environmental variable for the program - [Webhook_url]
