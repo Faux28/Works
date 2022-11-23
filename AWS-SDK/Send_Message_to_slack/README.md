@@ -1,6 +1,5 @@
 ## Steps to generate Webhook URL in slack
 
-
 1.Open slack app
 
 2.Create/open the workspace(you have to be the administrator of the workspace)
