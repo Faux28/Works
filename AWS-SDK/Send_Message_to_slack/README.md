@@ -23,7 +23,7 @@
 
 11.Select a channel in dropdown and click allow
 
-## implementing the Slack Webhook URL
+## Integration of slack with the program.
 
 1.Create a environmental variable `Webhook_URL` for the program.
 
