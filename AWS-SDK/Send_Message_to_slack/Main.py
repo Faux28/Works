@@ -6,9 +6,9 @@ import requests
 
 def lambda_handler(event, context):
     
-    webhook_url = getenv('Webhook_URL')
+    webhook_uri = getenv('Webhook_URI')
     message = json.dumps({'text': 'data'})
-    response = requests.post(webhook_url,data=message)
+    response = requests.post(webhook_uri,data=message)
     
     return {
         'statusCode': response.status_code,
